@@ -1,0 +1,22 @@
+{
+  "busData": [
+    {
+      "message": "fifteen late",
+      "bus": "monmouth",
+      "reportedFrom": "port authority",
+      "id": 1
+    },
+    {
+      "message": "late",
+      "bus": "monmouth",
+      "reportedFrom": "mad",
+      "id": 2
+    },
+    {
+      "message": "this sucks",
+      "bus": "this sucks",
+      "reportedFrom": "this sucks",
+      "id": 3
+    }
+  ]
+}

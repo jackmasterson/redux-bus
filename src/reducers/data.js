@@ -1,4 +1,4 @@
-import { getData, postData, filterData } from '../lib/dataServices';
+import { getData, postData } from '../lib/dataServices';
 const initialData = {
     "data": [],
 }

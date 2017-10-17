@@ -54,13 +54,13 @@ ul {
   padding-right: 15px;
   border-radius: 15px;
   position: fixed;
-  bottom: 15px;
+  bottom: 95px;
   left: 15px;
 }
 
 .dropdown {
   position: fixed;
-  bottom: 100px;
+  bottom: 160px;
   left: 15px;
 }
 

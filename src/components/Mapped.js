@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {grabData, applyFilter} from '../reducers/data';
-import {Jumbotron, Button} from 'react-bootstrap';
 
 const Data = (info) => {
-    console.log('info: ', info);
     return (
             <ul>
                 <li className="bullet" >Time: {info.time}</li>

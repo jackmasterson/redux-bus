@@ -5,6 +5,21 @@ export const getData = () => {
         .then(res => res.json());
 }
 
+export const filterData = (filter) => {
+    fetch(baseURL)
+        .then(res => res.json()
+        .then((resTwo) => {
+            let filtered = [];
+            for (res of resTwo) {
+                if (res.destination === filter) {
+                    filtered.push(res);
+                }
+            }
+            return filtered;
+        })
+    );
+}
+
 export const postData = (busInfo) => {
     console.log(busInfo);
     console.log(JSON.stringify(busInfo));

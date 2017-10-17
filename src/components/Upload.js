@@ -14,13 +14,22 @@ class Upload extends Component {
                 destination = option.value;
             }
         }
-        let info = {message, reportedFrom, destination, time}
+        let info = {message, reportedFrom, destination, time};
+        this.resetParams();
         return info;
+    }
+    resetParams() {
+        let message = document.getElementById('message');
+        let reportedFrom = document.getElementById('reported-from');
+        let time = document.getElementById('time');
+        message.value = '';
+        reportedFrom.value = '';
+        time.value = '';
     }
     render() {
         return (
             <div>
-                <form onSubmit={() => this.handleSubmit()}>
+                <form>
                     <input type="text" id="message" placeholder="your update here" />
                     <input type="text" id="reported-from" placeholder="where are you now?" />
                     <input type="text" id="time" placeholder="about what time is it?" />

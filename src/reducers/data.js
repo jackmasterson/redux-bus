@@ -25,29 +25,26 @@ export const grabData = (data) => {
     }
 }
 
-export const applyFilter = (data) => {
+export const applyFilter = (option, data) => {
+    let filtered = [];
+    for (let res of data) {
+        if (res.destination === option) {
+            filtered.push(res);
+        }
+    }
     return (dispatch) => {
-        getData()
-            .then((resTwo) => {
-                let filtered = [];
-                for (let res of resTwo) {
-                    if (res.destination === data) {
-                        filtered.push(res);
-                    }
-                }
-                dispatch(filterApplied(filtered));
-            })
+        dispatch(filterApplied(filtered));
     }
 }
 
 export default (state = initialData, action) => {
     switch (action.type) {
         case DATA_ADDED:
-            return {...state, data: action.payload}
+            return {...state, data: action.payload, filter: action.payload}
         case DATA_SENT: 
-            return {...state, data: action.payload}
+            return {...state, data: action.payload, filter: action.payload}
         case APPLY_FILTER:
-            return {...state, data: action.payload}
+            return {...state, filter: action.payload}
         default:
             return state;
     }

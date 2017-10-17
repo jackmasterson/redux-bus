@@ -27,6 +27,6 @@ class Mapped extends Component {
 }
 
 export default connect(
-    (state) => ({...state, data: state.data.data}),
+    (state) => ({...state, data: state.data.data.reverse()}),
     {grabData}
 )(Mapped);

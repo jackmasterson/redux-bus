@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Routes from './Routes';
 
-class Upload extends Component {
+class Nav extends Component {
     render() {
         return(
             <div>
@@ -23,4 +23,4 @@ class Upload extends Component {
 
 export default connect(
     (state) => (state)
-)(Upload);
+)(Nav);

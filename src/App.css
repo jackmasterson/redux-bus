@@ -26,3 +26,51 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.nav-ul {
+  width: 100vw;
+  text-align: center;
+}
+
+.nav-li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.bullet {
+  list-style-type: disc;
+}
+
+.button {
+  height: 50px;
+  width: 150px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+}
+
+.dropdown {
+  position: fixed;
+  bottom: 100px;
+  left: 15px;
+}
+
+.input {
+  display: block;
+  margin: 15px;
+}
+
+.status {
+  width: 100vw;
+  height: 60vh;
+  overflow-y: scroll;
+}

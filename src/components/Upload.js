@@ -30,9 +30,9 @@ class Upload extends Component {
         return (
             <div>
                 <form>
-                    <input type="text" id="message" placeholder="your update here" />
-                    <input type="text" id="reported-from" placeholder="where are you now?" />
-                    <input type="text" id="time" placeholder="about what time is it?" />
+                    <input type="text" className="input" id="message" placeholder="your update here" />
+                    <input type="text" className="input" id="reported-from" placeholder="where are you now?" />
+                    <input type="text" className="input" id="time" placeholder="about what time is it?" />
                     <select name="reported">
                         <option value="bus-destination">select bus destination</option>
                         <option value="port-authority">port authority</option>
@@ -41,7 +41,13 @@ class Upload extends Component {
                         <option value="pnc">pnc</option>
                     </select>
                 </form>
-                <button onClick={() => this.props.addData(this.handleSubmit())}>Submit</button>
+                <button 
+                    className="button"
+                    onClick={() => 
+                        this.props.addData(this.handleSubmit()
+                    )}>
+                    Submit
+                </button>
             </div>
         )
     }

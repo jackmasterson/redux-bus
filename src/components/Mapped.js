@@ -4,8 +4,9 @@ import {grabData} from '../reducers/data';
 
 const Data = (info) => (
     <ul>
+        <li>Time: {info.time}</li>
         <li>Message: {info.message}</li>
-        <li>Destination: {info.bus}</li>
+        <li>Destination: {info.destination}</li>
         <li>Reported from: {info.reportedFrom}</li>
     </ul>
 );

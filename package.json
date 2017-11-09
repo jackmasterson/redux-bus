@@ -2,6 +2,7 @@
   "name": "personal",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jackmasterson.github.io/bus-updater",
   "dependencies": {
     "express": "^4.16.2",
     "json-server": "^0.12.0",
@@ -21,6 +22,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "dev-server": "json-server -p 8080 db.json"
+    "dev-server": "json-server -p 8080 db.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
   }
 }
